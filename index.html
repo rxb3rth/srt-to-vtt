@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SRT to VTT</title>
+    <style>
+      .title {
+        text-align: center;
+      }
+
+      #drop-area {
+        border: 2px dotted #ccc;
+        width: 500px;
+        height: 200px;
+        display: flex;
+        border-radius: 4px;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+        user-select: none;
+        margin: auto;
+      }
+
+      #download-area {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      #download-area li {
+        margin-bottom: 0.75rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="title">SRT to VTT</h1>
+
+    <div id="drop-area">Drop .srt files here</div>
+
+    <ul id="download-area"></ul>
+
+    <script src="/main.js"></script>
+  </body>
+</html>
